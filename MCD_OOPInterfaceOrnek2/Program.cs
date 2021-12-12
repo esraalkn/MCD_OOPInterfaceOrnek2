@@ -30,25 +30,25 @@ namespace MCD_OOPInterfaceOrnek2
             }
 
             int secim = Convert.ToInt32(Console.ReadLine());
-            odemeturulistesi[secim - 1].Value.OdemeYap();
-            //switch (secim)
-            //{
-            //    case 1:
-            //        krediKartiIleOde.OdemeTutariniKullanicidanAl();
-            //        krediKartiIleOde.OdemeYap();
-            //            break;
-            //    case 2:
-            //        kapidaOde.OdemeTutariniKullanicidanAl();
-            //        kapidaOde.OdemeYap();
-            //        break;
-            //    case 3:
-            //        fastPayOde.OdemeTutariniKullanicidanAl();
-            //        fastPayOde.OdemeYap();
-            //        break;
-            //    default:
-            //        Console.WriteLine("Hatalı Seçim!!");
-            //        break;
-            //}
+            //odemeturulistesi[secim - 1].Value.OdemeYap();
+            switch (secim)
+            {
+                case 1:
+                    krediKartiIleOde.OdemeTutariniKullanicidanAl();
+                    krediKartiIleOde.OdemeYap();
+                    break;
+                case 2:
+                    kapidaOde.OdemeTutariniKullanicidanAl();
+                    kapidaOde.OdemeYap();
+                    break;
+                case 3:
+                    fastPayOde.OdemeTutariniKullanicidanAl();
+                    fastPayOde.OdemeYap();
+                    break;
+                default:
+                    Console.WriteLine("Hatalı Seçim!!");
+                    break;
+            }
             Console.ReadKey();
         }
     }
